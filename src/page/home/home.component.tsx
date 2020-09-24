@@ -2,7 +2,6 @@ import React from "react";
 
 import './home.styles.css'
 
-
 const HomePage = () => {
     return (
         <div className="cover-container d-flex h-100 p-3 mx-auto flex-column">
