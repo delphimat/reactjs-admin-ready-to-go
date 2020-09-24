@@ -7,17 +7,16 @@ import './sidebar.component.css';
 
 const SideBar = (props) => {
 
-    console.log("display history");
-    console.log(props.history);
+
 
     return (
         <nav className="col-md-2 d-none d-md-block bg-light sidebar">
             <div className="sidebar-sticky">
-                <ul className="nav flex-column">
+                <ul className="nav">
                     <li className="nav-item">
                         <LinkContainer to="/backend">
                             <span className="nav-link active">
-                                <HouseDoor />
+                                <HouseDoor className="mr-2" />
                                 Dashboard
                             </span>
                         </LinkContainer>
@@ -25,7 +24,7 @@ const SideBar = (props) => {
                     <li className="nav-item">
                         <LinkContainer to="/backend/carousel">
                             <span className="nav-link">
-                                <Camera/>
+                                <Camera className="mr-2" />
                                 Carousel
                             </span>
                         </LinkContainer>
@@ -33,7 +32,7 @@ const SideBar = (props) => {
                     <li className="nav-item">
                         <LinkContainer to="/backend/blog">
                             <span className="nav-link" >
-                                 <Cart/>
+                                 <Cart  className="mr-2" />
                                 Blog
                             </span>
                         </LinkContainer>
@@ -41,7 +40,7 @@ const SideBar = (props) => {
                     <li className="nav-item">
                         <LinkContainer to="/backend/order">
                             <span className="nav-link" >
-                               <GraphUp />
+                               <GraphUp className="mr-2"  />
                                 Orders
                             </span>
                         </LinkContainer>
@@ -49,7 +48,7 @@ const SideBar = (props) => {
                     <li className="nav-item">
                         <LinkContainer to="/backend/products">
                             <span className="nav-link" >
-                                <Table/>
+                                <Table  className="mr-2" />
                                 Products
                             </span>
                         </LinkContainer >
@@ -63,11 +62,11 @@ const SideBar = (props) => {
                         <span data-feather="plus-circle"></span>
                     </a>
                 </h6>
-                <ul className="nav flex-column mb-2">
+                <ul className="nav  mb-2">
                     <li className="nav-item">
                         <LinkContainer to="/backend/form">
                             <span className="nav-link" >
-                               <BadgeAd/>
+                               <BadgeAd   className="mr-2" />
                                 Reporting
                             </span>
                         </LinkContainer>

@@ -21,7 +21,7 @@ const DashBoardPage = ({history}) => {
     return (<>
         <NavBar/>
 
-        <div className="container-fluid">
+        <div className="container-fluid main-app-color">
             <div className="row">
                 <SideBar history={history}  />
 
