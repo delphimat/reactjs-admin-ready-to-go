@@ -3,6 +3,8 @@ import React from "react";
 import Form from 'react-bootstrap/Form';
 import Button from "react-bootstrap/cjs/Button";
 
+import { LinkContainer } from 'react-router-bootstrap';
+
 import './login.styles.css'
 
 const LoginPage = () => {
@@ -11,8 +13,10 @@ const LoginPage = () => {
 
     return (
         <Form className="form-signin">
+            <LinkContainer to="/">
             <img className="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt=""
                  width="72" height="72"/>
+            </LinkContainer>
 
             <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
 
@@ -30,8 +34,9 @@ const LoginPage = () => {
                 </label>
             </div>
 
-            <Button className="btn btn-lg btn-primary btn-block" type="submit">Sign in</Button>
-
+            <LinkContainer to="/backend">
+                <Button className="btn btn-lg btn-primary btn-block" type="submit">Sign in</Button>
+            </LinkContainer>
             <p className="mt-5 mb-3 text-muted">&copy; {today.getFullYear()}</p>
         </Form>
     )

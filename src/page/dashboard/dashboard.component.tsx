@@ -2,6 +2,7 @@ import React from "react";
 
 import { Route } from 'react-router-dom';
 
+
 import NavBar from "../../components/dashboard/navbar/navbar.component";
 import SideBar from "../../components/dashboard/sidebar/sidebar.component";
 
@@ -10,6 +11,7 @@ import CarouselDashboard from "../../components/dashboard/carousel/carousel.comp
 import OrderForm from "../../components/dashboard/forms/orders/form-orders.component";
 import ProductsChart from "../../components/dashboard/charts/products/charts-products.component";
 import TableDashboard from "../../components/dashboard/tables/table.components";
+
 
 import './dashboard.styles.css';
 

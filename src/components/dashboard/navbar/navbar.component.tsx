@@ -1,6 +1,9 @@
 import React from "react";
 
+import { LinkContainer } from 'react-router-bootstrap';
+
 import './navbar.styles.css';
+
 
 const NavBar = () => {
     return (
@@ -10,7 +13,9 @@ const NavBar = () => {
                    aria-label="Search"/>
             <ul className="navbar-nav px-3">
                 <li className="nav-item text-nowrap">
-                    <a className="nav-link" href="#">Sign out</a>
+                    <LinkContainer to="/login">
+                        <span className="nav-link" >Sign out</span>
+                    </LinkContainer>
                 </li>
             </ul>
         </nav>

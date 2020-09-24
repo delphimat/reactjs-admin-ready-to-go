@@ -1,5 +1,7 @@
 import React from "react";
 
+import { LinkContainer } from 'react-router-bootstrap';
+
 import './home.styles.css'
 
 const HomePage = () => {
@@ -9,7 +11,9 @@ const HomePage = () => {
                 <div className="inner">
                     <h3 className="masthead-brand">Cover</h3>
                     <nav className="nav nav-masthead justify-content-center">
-                        <a className="nav-link active" href="#">Login</a>
+                        <LinkContainer to="/login">
+                            <span className="nav-link active" >Login</span>
+                        </LinkContainer>
                     </nav>
                 </div>
             </header>
