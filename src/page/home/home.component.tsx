@@ -6,7 +6,7 @@ import './home.styles.css'
 
 const HomePage = () => {
     return (
-        <div className="cover-container d-flex h-100 p-3 mx-auto flex-column">
+        <div className="cover-container d-flex h-100 p-3 mx-auto flex-column home-page-color">
             <header className="masthead mb-auto">
                 <div className="inner">
                     <h3 className="masthead-brand">Cover</h3>

@@ -7,8 +7,6 @@ import './sidebar.component.css';
 
 const SideBar = (props) => {
 
-
-
     return (
         <nav className="col-md-2 d-none d-md-block bg-light sidebar">
             <div className="sidebar-sticky">
@@ -20,6 +18,14 @@ const SideBar = (props) => {
                                 Dashboard
                             </span>
                         </LinkContainer>
+                    </li>
+                    <li className="nav-item">
+                        <LinkContainer to="/backend/products">
+                            <span className="nav-link" >
+                                <Table  className="mr-2" />
+                                Products
+                            </span>
+                        </LinkContainer >
                     </li>
                     <li className="nav-item">
                         <LinkContainer to="/backend/carousel">
@@ -44,14 +50,6 @@ const SideBar = (props) => {
                                 Orders
                             </span>
                         </LinkContainer>
-                    </li>
-                    <li className="nav-item">
-                        <LinkContainer to="/backend/products">
-                            <span className="nav-link" >
-                                <Table  className="mr-2" />
-                                Products
-                            </span>
-                        </LinkContainer >
                     </li>
 
                 </ul>
