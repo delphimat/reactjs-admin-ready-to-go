@@ -9,7 +9,7 @@ import DashBoardPage from "./page/dashboard/dashboard.component";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App h-100">
         <Switch>
             <Route path="/"    exact   component={HomePage} />
             <Route path="/login"  component={LoginPage} />
