@@ -5,5 +5,5 @@ import orderReducer from "./order/order.reducer";
 
 export default combineReducers({
     user: userReducer,
-    cart: orderReducer
+    // order: orderReducer
 });

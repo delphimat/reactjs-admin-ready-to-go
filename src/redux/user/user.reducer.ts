@@ -6,10 +6,10 @@ const INITIAL_STATE = {
 
 const userReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case UserActionTypes.SET_CURRENT_USER:
+        case UserActionTypes.TOOGLE_CONNECT_USER:
             return {
                 ...state,
-                currentUser: !state.isOnline
+                isOnline: !state.isOnline
             }
         default:
             return state;

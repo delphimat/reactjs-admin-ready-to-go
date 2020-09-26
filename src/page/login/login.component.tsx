@@ -7,9 +7,16 @@ import Button from "react-bootstrap/cjs/Button";
 
 import { LinkContainer } from 'react-router-bootstrap';
 
+import { tooggleConnectUser } from "../../redux/user/user.action";
+
 import './login.styles.css'
 
-const LoginPage = () => {
+const LoginPage = (props) => {
+
+
+    const { toggleUser } = props;
+
+    console.log(toggleUser);
 
     const today  = new Date();
 
@@ -36,12 +43,16 @@ const LoginPage = () => {
                 </label>
             </div>
 
-            <LinkContainer to="/backend">
-                <Button className="btn btn-lg btn-primary btn-block" type="submit">Sign in</Button>
-            </LinkContainer>
+            {/*<LinkContainer to="/backend">*/}
+                <Button onClick={toggleUser}  className="btn btn-lg btn-primary btn-block" type="submit">Sign in</Button>
+            {/*</LinkContainer>*/}
             <p className="mt-5 mb-3 text-muted">&copy; {today.getFullYear()}</p>
         </Form>
     )
 }
 
-export default LoginPage;
+const mapDispatchToProps = (dispatch) => ({
+    toggleUser: () => dispatch(tooggleConnectUser())
+});
+
+export default connect(null, mapDispatchToProps)(LoginPage);
