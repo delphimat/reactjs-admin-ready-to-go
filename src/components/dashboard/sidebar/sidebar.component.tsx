@@ -12,8 +12,8 @@ const SideBar = (props) => {
             <div className="sidebar-sticky">
                 <ul className="nav">
                     <li className="nav-item">
-                        <LinkContainer to="/backend">
-                            <span className="nav-link active">
+                        <LinkContainer exact to="/backend">
+                            <span className="nav-link">
                                 <HouseDoor className="mr-2" />
                                 Dashboard
                             </span>
@@ -56,9 +56,6 @@ const SideBar = (props) => {
 
                 <h6 className="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                     <span>Saved reports</span>
-                    <a className="d-flex align-items-center text-muted" >
-                        <span data-feather="plus-circle"></span>
-                    </a>
                 </h6>
                 <ul className="nav  mb-2">
                     <li className="nav-item">
